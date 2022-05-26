@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/d82a03a734.js" crossorigin="anonymous"></script>
+    <style>
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            /* overflow-x: hidden;  */
+            height: 100%;
+        }
+
+        p {
+            font-weight: bold;
+
+        }
+
+        .hd {
+            min-height: 950px;
+            width: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 400px/130px;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            background-image: url("https://lh3.googleusercontent.com/zOh4gcwX7SBwJ-EkUQm-kCrLCpvs8kxt9-ZOs3iLAS5wBGGyVlN175Fa4QTD9IDf4-mv13OGMXZyNBtY2PWz2AFP=s1000");
+
+        }
+
+        .btn:hover {
+            background-color: ivory;
+            color: blue
+        }
+
+        .row {
+            padding: 50px;
+        }
+
+        .bt:hover {
+            background-color: greenyellow !important
+        }
+
+        .bt1:hover {
+            background-color: rgb(255, 230, 171) !important;
+            color: white !important;
+        }
+
+        .bt1:hover a {
+            color: crimson !important;
+
+        }
+
+        .e1 {
+            color: white;
+            font-weight: bold;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: cornsilk;
+        }
+
+        .card {
+            width: 80%;
+            background-color: rgb(118, 74, 241);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 5px 5px 5px 5px rgb(211, 199, 199);
+
+            transform: scale(0.85);
+            transition: box-shadow 0.2s, transform 0.6s;
+        }
+
+        .h-100 {
+            background-color: rgb(169, 221, 66);
+        }
+
+        .card:hover {
+            transform: scale(1);
+            box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .py-4 {
+            padding-top: 0%;
+            padding-bottom: 0%;
+        }
+
+        .fa-paper-plane:hover {
+
+            color: teal
+        }
+
+        .footer-left-widget {
+            padding-left: 80px;
+        }
+
+        .footer-widget .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .footer-widget:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .dk-footer-form {
+            position: relative;
+        }
+
+        .dk-footer-form input[type=email] {
+            /* padding: 14px 28px; */
+            border-radius: 23px;
+            background: #2E2E2E;
+            border: 1px solid #2E2E2E;
+        }
+
+        .dk-footer-form input::-webkit-input-placeholder,
+        .dk-footer-form input::-moz-placeholder,
+        .dk-footer-form input:-ms-input-placeholder,
+        .dk-footer-form input::-ms-input-placeholder,
+        .dk-footer-form input::-webkit-input-placeholder {
+            color: #878787;
+            font-size: 14px;
+        }
+
+        .dk-footer-form input::-webkit-input-placeholder,
+        .dk-footer-form input::-moz-placeholder,
+        .dk-footer-form input:-ms-input-placeholder,
+        .dk-footer-form input::-ms-input-placeholder,
+        .dk-footer-form input::placeholder {
+            color: #878787;
+            font-size: 14px;
+        }
+
+        .dk-footer-form button[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            border: 1px solid #007bff;
+            background: #007bff;
+            color: #fff;
+
+        }
+
+        .dk-footer-form button:hover {
+            cursor: pointer;
+            background-color: yellowgreen !important;
+        }
+
+        .navbar-brand:hover {
+            color: rgb(169, 16, 121) !important;
+        }
+
+        /* .shadow-1 {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+        } */
+
+        .blue-hover {
+            transition: all 0.25s ease-in;
+            border-bottom: 5px solid transparent;
+        }
+
+        .blue-hover:hover {
+            transform: translateY(-10px);
+            border: none;
+            border-bottom: 5px solid #2196fe;
+        }
+        .yz:hover{
+            background-color: darkcyan !important;
+            color: #fff;
+            transform:translateX(-10px) !important;
+        }
+    </style>
+    <title>Home</title>
+</head>
+
+<body>
+    <div style=" position: relative;padding-bottom: 13%;padding-top: 0px;" class="hd">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid sticky-top shadow"
+            style="background-color:rgb(255, 255, 255); width: 100%; margin: 0px auto 0px auto;z-index: 1;padding-bottom: 0px;padding-top: 0px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zxoA6AfpXJFRikqcrR_ebzFF3tF-6vrkxQ&usqp=CAU"
+                        width="85%" height="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="margin-left: 10%" class="collapse navbar-collapse" id="navbarNav">
+                    <ul style="font-weight: 500;" class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="home.html" style="font-weight: 500;">Home</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" aria-current="page" href="searchhotels.html"
+                                style="margin-left: 10px;">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="about.html" style="margin-left: 10px;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="photo.html" style="margin-left: 10px;">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="contact.html" style="margin-left: 10px;">Contacts</a>
+                        </li>
+
+                    </ul>
+                    <span id="navbar-text" style="margin-left: 35%">
+                        <a style=" font-weight: 600;text-align: center;" class="btn btn-primary" href="book.html"
+                            role="button">Book Now</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <h1 class="e1"
+            style="margin-top: 15%;text-align: center;text-overflow: ellipsis; font-weight: 900px;font-size: 1.5cm;color:rgb(248, 124, 15); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;text-decoration-style: wavy;">
+            Experience Your Dream Vacation</h1>
+        <h1 class="e1"
+            style="text-align: center; font-weight: 900px; font-size: 1.5cm;color: rgb(248, 124, 15);font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            With Luxurious
+            Hotels</h1>
+        <a href="https://icons8.com/icon/Fagt7m9E84Je/globe"></a>
+        <h3 style="text-align: center; text-decoration: underline; color: ivory;margin-top: 8%; font-weight: 600;">
+            <img style="margin-top: -7px;"
+                src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/64/000000/external-globe-airline-flaticons-lineal-color-flat-icons.png" />The
+            best hotel deals across the globe
+        </h3>
+        <div style="position: relative; display: flex; justify-content: center;margin-top: 10%;">
+            <button style="background-color: yellowgreen;font-weight: bold;border-radius: 30px;padding-left: 20px;padding-right: 20px;" type="button" class="btn btn-success yz">
+                <p style="text-align: center;"><i style="margin-left: -7px;" class="fa-solid fa-phone"></i> Call Now</p>
+                <p style="margin-top: -17px;margin-bottom: 2px;">+ 01 234 567 88</p>
+            </button>
+        </div>
+
+        <div class="container"
+            style="position:absolute;bottom: -100px; background-color:rgb(236, 37, 90);max-width: 80%;padding: 0%;left: 50%;transform: translateX(-50%);padding-bottom: 1%;">
+            <a href="https://icons8.com/icon/fEvx6hqv-Kcj/marker-o"></a>
+            <div class="row justify-content-md-center" style="padding:10px 50px;">
+                <div class="col col-lg-2"
+                    style="width: 18%; display: flex; justify-content: center; align-items: center;">
+                    <img style="align-self: center; width: 100px; height: 100px;"
+                        src="https://img.icons8.com/ios-filled/100/ffffff/marker-o.png" />
+                </div>
+                <div class="col-md-auto">
+                    <h2 style="text-align: left; color: white;">Discover Locations & Plan Your Vacations With Us</h2>
+                    <h5 style="margin-top: 2%; color: white;">Search locations or hotels by Name</h5>
+                    <a href="https://icons8.com/icon/W0xu6u7K9A0F/search"></a>
+                </div>
+            </div>
+            <div class="row justify-content-md-center" style="padding:10px; ">
+                <div class="col col-lg-2" style="display: flex; justify-content: center;">
+                    <a href="https://icons8.com/icon/W0xu6u7K9A0F/search"></a>
+                    <a style="font-weight: bold;color: rgb(236, 37, 90);background-color: white;"
+                        class="btn btn-warning" href="searchlocations.html" role="button">
+                        <img src="https://img.icons8.com/ios-glyphs/30/F10086/search--v2.png" /> Search</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div style="background-color:bisque;margin-left: 20%;margin-right: 20%;margin-top: 25%;padding: 20px;">
+        <h1 style=" text-align: center; color: blueviolet;font-family: Georgia, 'Times New Roman', Times, serif;">
+            Welcome To Yatra</h1>
+        <h3 style="text-align: center;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Book
+            cheap,budget & luxury hotels with Yatra.</h3>
+        <h3
+            style="text-align: center; margin-left: auto;margin-right: auto;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+            Escape to the epitome of luxury in our handpicked ultra-premium stays packed with signature services.</h3>
+    </div>
+    <h2 style="text-align: center; margin-top: 150px;color:rgb(117, 5, 80)">Why book hotels with Yatra ?</h2>
+    <br></br>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: -70px;align-self: center;">
+        <div class="col" style="align-self: center;">
+            <div class="card h-100 " style="background: linear-gradient(45deg, #3503ad, #f7308c);margin-left: 12%; padding-top: 10px;">
+                <h5 style="text-align: center;color: white;">Extensive Hotel Options</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64" viewBox="0 0 172 172"
+                    style=" fill:#000000; align-self: center;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="#ffffff"></path>
+                        <g>
+                            <rect x="208" y="400" transform="scale(0.33594,0.33594)" width="96" height="96"
+                                fill="#e74c3c"></rect>
+                            <rect x="208" y="280" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="208" y="224" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="208" y="168" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="208" y="336" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="360" y="280" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="360" y="336" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="336" y="176" transform="scale(0.33594,0.33594)" width="152" height="24"
+                                fill="#e74c3c"></rect>
+                            <rect x="56" y="280" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="360" y="224" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="56" y="224" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="56" y="336" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="360" y="392" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="56" y="392" transform="scale(0.33594,0.33594)" width="96" height="32"
+                                fill="#e74c3c"></rect>
+                            <rect x="24" y="176" transform="scale(0.33594,0.33594)" width="152" height="24"
+                                fill="#e74c3c"></rect>
+                            <rect x="160" y="120" transform="scale(0.33594,0.33594)" width="192" height="24"
+                                fill="#e74c3c"></rect>
+                            <g fill="#004fac">
+                                <path
+                                    d="M166.625,163.9375h-2.6875v-94.0625c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-8.0625c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-48.375v-5.375h2.6875c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-8.0625c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-64.5c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v8.0625c0,1.48427 1.20323,2.6875 2.6875,2.6875h2.6875v5.375h-48.375c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v8.0625c0,1.48427 1.20323,2.6875 2.6875,2.6875v94.0625h-2.6875c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875c0,1.48427 1.20323,2.6875 2.6875,2.6875h161.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM56.4375,163.9375h-43v-94.0625h43zM56.4375,64.5h-45.6875v-2.6875h45.6875zM83.3125,163.9375h-10.75v-26.875h10.75zM99.4375,163.9375h-10.75v-26.875h10.75zM110.1875,163.9375h-5.375v-29.5625c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v29.5625h-5.375v-112.875h48.375zM56.4375,45.6875v-2.6875h59.125v2.6875zM158.5625,163.9375h-43v-94.0625h43zM161.25,64.5h-45.6875v-2.6875h45.6875z">
+                                </path>
+                                <path
+                                    d="M69.875,107.5h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875zM99.4375,96.75v5.375h-5.375v-5.375zM88.6875,96.75v5.375h-5.375v-5.375zM72.5625,96.75h5.375v5.375h-5.375z">
+                                </path>
+                                <path
+                                    d="M69.875,88.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875zM99.4375,77.9375v5.375h-5.375v-5.375zM88.6875,77.9375v5.375h-5.375v-5.375zM72.5625,77.9375h5.375v5.375h-5.375z">
+                                </path>
+                                <path
+                                    d="M69.875,69.875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875zM99.4375,59.125v5.375h-5.375v-5.375zM88.6875,59.125v5.375h-5.375v-5.375zM72.5625,59.125h5.375v5.375h-5.375z">
+                                </path>
+                                <path
+                                    d="M69.875,126.3125h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875zM99.4375,115.5625v5.375h-5.375v-5.375zM88.6875,115.5625v5.375h-5.375v-5.375zM72.5625,115.5625h5.375v5.375h-5.375z">
+                                </path>
+                                <path
+                                    d="M153.1875,91.375h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM123.625,102.125v-5.375h5.375v5.375zM134.375,102.125v-5.375h5.375v5.375zM150.5,102.125h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M153.1875,110.1875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM123.625,120.9375v-5.375h5.375v5.375zM134.375,120.9375v-5.375h5.375v5.375zM150.5,120.9375h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M51.0625,91.375h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM21.5,102.125v-5.375h5.375v5.375zM32.25,102.125v-5.375h5.375v5.375zM48.375,102.125h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M153.1875,72.5625h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM123.625,83.3125v-5.375h5.375v5.375zM134.375,83.3125v-5.375h5.375v5.375zM150.5,83.3125h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M51.0625,72.5625h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM21.5,83.3125v-5.375h5.375v5.375zM32.25,83.3125v-5.375h5.375v5.375zM48.375,83.3125h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M51.0625,110.1875h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM21.5,120.9375v-5.375h5.375v5.375zM32.25,120.9375v-5.375h5.375v5.375zM48.375,120.9375h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M153.1875,129h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM123.625,139.75v-5.375h5.375v5.375zM134.375,139.75v-5.375h5.375v5.375zM150.5,139.75h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M51.0625,129h-32.25c-1.48427,0 -2.6875,1.20323 -2.6875,2.6875v10.75c0,1.48427 1.20323,2.6875 2.6875,2.6875h32.25c1.48427,0 2.6875,-1.20323 2.6875,-2.6875v-10.75c0,-1.48427 -1.20323,-2.6875 -2.6875,-2.6875zM21.5,139.75v-5.375h5.375v5.375zM32.25,139.75v-5.375h5.375v5.375zM48.375,139.75h-5.375v-5.375h5.375z">
+                                </path>
+                                <path
+                                    d="M75.95547,22.18531l-0.20459,7.42422c-0.02467,0.88624 0.38932,1.72763 1.10652,2.24884c0.7172,0.52121 1.64531,0.65517 2.48062,0.35804l6.99791,-2.48896l6.99791,2.48896c0.83514,0.29706 1.76305,0.16321 2.48019,-0.35776c0.71714,-0.52097 1.13128,-1.36205 1.10695,-2.24811l-0.20459,-7.42422l4.52945,-5.8863c0.54094,-0.70274 0.70038,-1.6271 0.42611,-2.47046c-0.27427,-0.84335 -0.94692,-1.49711 -1.79775,-1.74724l-7.12187,-2.10028l-4.19922,-6.12616c-0.50104,-0.73144 -1.33059,-1.16871 -2.21719,-1.16871c-0.88659,0 -1.71614,0.43727 -2.21719,1.16871l-4.19922,6.12616l-7.12188,2.10028c-0.85024,0.25058 -1.52225,0.90428 -1.7962,1.74729c-0.27395,0.843 -0.1146,1.76687 0.42591,2.4694zM82.35676,14.86759c0.59301,-0.17463 1.10762,-0.54852 1.45696,-1.05854l2.52222,-3.6802l2.52222,3.6802c0.34934,0.51002 0.86395,0.88391 1.45696,1.05854l4.27917,1.26145l-2.72109,3.53608c-0.37701,0.49009 -0.57349,1.0952 -0.55631,1.71328l0.12262,4.45957l-4.20325,-1.49492c-0.5826,-0.20694 -1.21869,-0.20694 -1.8013,0l-4.20325,1.49492l0.12262,-4.45957c0.01717,-0.61809 -0.17931,-1.22319 -0.55631,-1.71328l-2.72109,-3.53608z">
+                                </path>
+                                <path
+                                    d="M38.33047,22.18531l-0.20459,7.42422c-0.02467,0.88624 0.38932,1.72763 1.10652,2.24884c0.7172,0.52121 1.64531,0.65517 2.48062,0.35804l6.99791,-2.48896l6.99791,2.48896c0.83514,0.29706 1.76305,0.16321 2.48019,-0.35776c0.71714,-0.52097 1.13128,-1.36205 1.10695,-2.24811l-0.20459,-7.42422l4.52945,-5.8863c0.54094,-0.70274 0.70038,-1.6271 0.42611,-2.47046c-0.27427,-0.84335 -0.94692,-1.49711 -1.79775,-1.74724l-7.12188,-2.10028l-4.19922,-6.12616c-0.50104,-0.73144 -1.33059,-1.16871 -2.21719,-1.16871c-0.88659,0 -1.71614,0.43727 -2.21719,1.16871l-4.19922,6.12616l-7.12187,2.10028c-0.85024,0.25058 -1.52225,0.90428 -1.7962,1.74729c-0.27395,0.843 -0.1146,1.76687 0.42591,2.4694zM44.73176,14.86759c0.59301,-0.17463 1.10762,-0.54852 1.45696,-1.05854l2.52222,-3.6802l2.52222,3.6802c0.34934,0.51002 0.86395,0.88391 1.45696,1.05854l4.27917,1.26145l-2.72109,3.53608c-0.37701,0.49009 -0.57349,1.0952 -0.55631,1.71328l0.12262,4.45957l-4.20325,-1.49492c-0.5826,-0.20694 -1.21869,-0.20694 -1.8013,0l-4.20325,1.49492l0.12262,-4.45957c0.01717,-0.61809 -0.17931,-1.22319 -0.55631,-1.71328l-2.72109,-3.53608z">
+                                </path>
+                                <path
+                                    d="M115.59609,22.18531l-0.20459,7.42422c-0.02467,0.88624 0.38932,1.72763 1.10652,2.24884c0.7172,0.52121 1.64531,0.65517 2.48062,0.35804l6.99791,-2.48896l6.99791,2.48896c0.83514,0.29706 1.76305,0.16321 2.48019,-0.35776c0.71714,-0.52097 1.13128,-1.36205 1.10695,-2.24811l-0.20459,-7.42422l4.52945,-5.8863c0.54094,-0.70274 0.70038,-1.6271 0.42611,-2.47046c-0.27427,-0.84335 -0.94692,-1.49711 -1.79775,-1.74724l-7.12188,-2.10028l-4.19922,-6.12616c-0.50104,-0.73144 -1.33059,-1.16871 -2.21719,-1.16871c-0.88659,0 -1.71614,0.43727 -2.21719,1.16871l-4.19922,6.12616l-7.12187,2.10028c-0.85024,0.25058 -1.52225,0.90428 -1.7962,1.74729c-0.27395,0.843 -0.1146,1.76687 0.42591,2.4694zM121.99738,14.86759c0.59301,-0.17463 1.10762,-0.54852 1.45696,-1.05854l2.52222,-3.6802l2.52222,3.6802c0.34934,0.51002 0.86395,0.88391 1.45696,1.05854l4.27917,1.26145l-2.72109,3.53608c-0.37701,0.49009 -0.57349,1.0952 -0.55631,1.71328l0.12262,4.45957l-4.20325,-1.49492c-0.5826,-0.20694 -1.21869,-0.20694 -1.8013,0l-4.20325,1.49492l0.12262,-4.45957c0.01717,-0.61809 -0.17931,-1.22319 -0.55631,-1.71328l-2.72109,-3.53608z">
+                                </path>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <div class="card-body">
+                    <p style="text-align: center;color:white;" class="card-text">Best hotels available for
+                        different destinations to offer you a stay of
+                        lifetime.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background: linear-gradient(45deg, #3503ad, #f7308c);margin-left: 12%;padding-top: 10px;">
+                <h5 style="text-align: center;color: white;">Savings on Hotel Booking</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="55" height="60" viewBox="0 0 172 172"
+                    style=" fill:#000000; align-self: center;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g fill="#e74c3c">
+                            <path
+                                d="M81.1625,3.5475c-5.0525,0 -8.58656,4.01781 -11.0725,7.525c-2.29781,3.225 -6.03344,3.3325 -13.0075,3.3325c-3.70875,0 -8.46562,0.34938 -11.395,2.4725c4.36719,7.32344 10.06469,12.77906 15.265,14.19c2.75469,0.7525 4.97188,0.25531 6.9875,-1.3975c3.34594,-3.17125 7.05469,-6.58437 11.61,-6.235c3.23844,0.22844 6.10063,2.21719 9.46,6.45c0.60469,0.73906 1.46469,1.11531 2.4725,1.1825c1.78719,0.12094 4.00438,-0.94062 5.9125,-2.6875c2.01563,-1.80062 4.34031,-3.64156 6.7725,-5.59c3.93719,-3.15781 10.92469,-8.73437 12.04,-11.395c-1.02125,-0.61812 -2.43219,-1.075 -4.4075,-1.075c-2.72781,0 -5.375,0.67188 -7.955,1.29c-2.20375,0.52406 -4.25969,0.9675 -6.02,0.9675c-1.55875,0 -2.70094,-0.33594 -3.5475,-1.1825c-5.29437,-5.50937 -9.19125,-7.8475 -13.115,-7.8475zM118.1425,19.8875c-2.64719,2.66063 -6.03344,5.36156 -9.675,8.2775c-2.29781,1.84094 -4.56875,3.70875 -6.45,5.375c-3.31906,3.03688 -7.36375,4.66281 -11.0725,4.4075c-2.88906,-0.20156 -5.33469,-1.51844 -7.2025,-3.7625c-2.63375,-3.3325 -4.11187,-3.92375 -4.73,-3.9775c-1.505,-0.04031 -4.23281,2.52625 -6.45,4.6225c-2.76812,2.28438 -5.92594,3.44 -9.245,3.44c-1.38406,0 -2.74125,-0.25531 -4.1925,-0.645c-2.80844,-0.76594 -5.57656,-2.32469 -8.2775,-4.4075c3.38625,3.60125 8.18344,9.9975 9.03,18.92c7.12188,4.4075 23.66344,11.85188 43,0.9675c1.08844,-0.61812 2.35156,-1.505 3.7625,-2.4725c0.1075,-0.08062 0.20156,-0.13437 0.3225,-0.215c-0.94062,-12.77906 6.5575,-22.65562 7.525,-23.865l0.3225,-0.43c1.16906,-1.84094 2.51281,-4.01781 3.3325,-6.235zM131.4725,41.28c-6.73219,-0.30906 -12.73875,2.01563 -17.63,4.73c-0.09406,1.06156 -0.05375,2.10969 0,3.225c1.54531,0.63156 3.07719,1.41094 4.6225,2.15c7.2025,3.46688 14.25719,8.21031 20.64,13.975c0.08063,0.01344 0.13438,0 0.215,0c0.84656,0 1.69313,-0.33594 2.365,-0.9675c1.38406,-1.30344 1.41094,-3.45344 0.1075,-4.8375c-5.92594,-6.26187 -13.23594,-9.01656 -20.425,-9.5675c5.67063,-2.28437 12.30875,-2.91594 19.78,1.1825c1.66625,0.91375 3.70875,0.26875 4.6225,-1.3975c0.91375,-1.66625 0.26875,-3.70875 -1.3975,-4.6225c-4.59562,-2.51281 -8.85531,-3.68187 -12.9,-3.87zM111.585,55.5775c-0.36281,0.24188 -0.72562,0.51063 -1.075,0.7525c-1.58562,1.08844 -2.94281,1.97531 -4.1925,2.6875c-8.46562,4.77031 -16.54156,6.5575 -23.7575,6.5575c-12.52375,0 -22.4675,-5.11969 -27.4125,-8.2775c-21.8225,9.3525 -41.3875,36.64406 -41.3875,59.985c0,37.5175 24.32188,44.3975 72.24,44.3975c47.91813,0 72.24,-6.88 72.24,-44.3975c0,-27.78875 -23.19312,-52.33906 -46.655,-61.705zM80.84,75.68h6.235v7.2025c8.94938,1.72 12.04,7.955 13.76,14.835h-6.235c-1.03469,-4.81062 -4.11187,-8.9225 -10.6425,-8.9225c-9.28531,0 -10.32,6.16781 -10.32,8.9225c0,6.53063 6.15438,7.8475 12.685,9.5675c8.25063,2.06938 16.555,4.8375 16.555,15.1575c0,12.38938 -10.99187,15.88313 -15.8025,16.2325v5.805h-6.235v-5.805c-5.16,-1.03469 -14.44531,-4.21937 -15.48,-17.63h6.235c0,4.12531 2.72781,11.7175 12.3625,11.7175c9.28531,0 11.7175,-4.4075 11.7175,-9.5675c0,-15.13062 -28.9175,-4.87781 -28.9175,-24.8325c0,-11.00531 8.9225,-15.11719 14.0825,-15.8025z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+                <div class="card-body">
+                    <p style="text-align: center;color: white;" class="card-text">Enjoy hotel bookings with
+                        best offers and discount and make your stay
+                        unforgettable.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100" style="background: linear-gradient(45deg, #7d03ad, #f7308c);margin-left: 12%;padding-top: 10px;">
+                <h5 style="text-align: center;color: white;">Hotel Ratings</h5>
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="59" height="60" viewBox="0 0 172 172"
+                    style=" fill:#000000; align-self: center;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g>
+                            <path
+                                d="M116.96,144.48c-1.8232,0 -3.57072,-0.7224 -4.86416,-2.01584l-13.76,-13.76c-2.69008,-2.69008 -2.69008,-7.03824 0,-9.72832c2.69008,-2.69008 7.03824,-2.69008 9.72832,0l8.55872,8.55872l19.23648,-21.98848c2.50432,-2.8552 6.8456,-3.14416 9.70768,-0.64672c2.86208,2.50432 3.15104,6.8456 0.64672,9.70768l-24.08,27.52c-1.25216,1.43792 -3.04096,2.28416 -4.94672,2.35296c-0.07568,0 -0.15136,0 -0.22704,0z"
+                                fill="#9b59b6"></path>
+                            <path
+                                d="M123.84,172c-26.5568,0 -48.16,-21.6032 -48.16,-48.16c0,-26.5568 21.6032,-48.16 48.16,-48.16c26.5568,0 48.16,21.6032 48.16,48.16c0,26.5568 -21.6032,48.16 -48.16,48.16zM123.84,89.44c-18.96816,0 -34.4,15.43184 -34.4,34.4c0,18.96816 15.43184,34.4 34.4,34.4c18.96816,0 34.4,-15.43184 34.4,-34.4c0,-18.96816 -15.43184,-34.4 -34.4,-34.4z"
+                                fill="#9b59b6"></path>
+                            <path
+                                d="M31.84752,144.48c-1.38976,0 -2.77952,-0.42656 -3.96288,-1.25904c-2.15344,-1.5136 -3.25424,-4.13488 -2.82768,-6.73552l7.1552,-43.86688l-30.25824,-31.00128c-1.80256,-1.84384 -2.41488,-4.54768 -1.59616,-6.99008c0.81872,-2.4424 2.93776,-4.2312 5.48336,-4.61648l41.53456,-6.34336l18.63792,-39.70448c1.12832,-2.42176 3.55696,-3.96288 6.2264,-3.96288c2.66944,0 5.09808,1.54112 6.2264,3.956l18.63792,39.70448l41.53456,6.34336c2.55248,0.39216 4.66464,2.17408 5.48336,4.61648c0.81872,2.4424 0.19952,5.14624 -1.59616,6.99008l-5.82736,5.97184c-2.66256,2.72448 -7.01072,2.77264 -9.72832,0.12384c-1.62368,-1.5824 -2.29792,-3.77712 -2.00896,-5.86864l-33.56064,-5.1256c-2.2704,-0.35088 -4.21744,-1.80256 -5.18752,-3.88032l-13.97328,-29.756l-13.9664,29.756c-0.97696,2.07776 -2.924,3.52944 -5.1944,3.88032l-31.9232,4.87792l23.33008,23.91488c1.52736,1.56176 2.21536,3.75648 1.86448,5.90992l-5.4352,33.30608l17.888,-9.88656c3.3368,-1.83696 7.51296,-0.63296 9.34992,2.69008c1.84384,3.32304 0.63296,7.51296 -2.69008,9.34992l-30.28576,16.73904c-1.04576,0.57792 -2.18784,0.86688 -3.32992,0.86688z"
+                                fill="#e73c72"></path>
+                        </g>
+                    </g>
+                </svg>
+                <div class="card-body">
+                    <p style="text-align: center;color: white;" class="card-text">All our hotels have good
+                        ratings on Trip Advisor and recommended by users.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container " style="padding-top: 3%;margin-top: 100px;">
+        <h1 style="text-align: center;font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">Top
+            Destinations</h1>
+        <div class="row align-items-baseline justify-content-space-between">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 shadow-1 blue-hover"
+                style="margin-top: 10px;margin-bottom: 20px;">
+                <img style="width: 100%;height:100%;background-position: center;"
+                    src="https://preview.colorlib.com/theme/listed/images/ximg_1.jpg.pagespeed.ic.MfrJLO1quL.webp"
+                    alt="">
+                <h6 style="text-align: center;margin-top: 20px;font-family:Georgia, 'Times New Roman', Times, serif">
+                    Trogir, Croatia</h6>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 shadow-1 blue-hover" style="margin-top: 10px;margin-bottom: 20px">
+                <img style="width: 100%;height:100%;background-position: center;"
+                    src="https://preview.colorlib.com/theme/listed/images/ximg_2.jpg.pagespeed.ic.-akM_1eoCH.webp"
+                    alt="">
+                <h6 style="text-align: center;margin-top: 20px;font-family:Georgia, 'Times New Roman', Times, serif">
+                    Stockton Beach, Austrlia</h6>
+
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 shadow-1 blue-hover" style="margin-top: 10px;margin-bottom: 20px">
+                <img style="width: 100%;height:100%;background-position: center;"
+                    src="https://preview.colorlib.com/theme/listed/images/ximg_3.jpg.pagespeed.ic.bXaZA7aTtS.webp"
+                    alt="">
+                <h6 style="text-align: center;margin-top: 20px;font-family:Georgia, 'Times New Roman', Times, serif">
+                    Desert, Morocco</h6>
+
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 shadow-1 blue-hover" style="margin-top: 10px;margin-bottom: 20px">
+                <img style="width: 100%;height:100%;background-position: center;"
+                    src="https://preview.colorlib.com/theme/listed/images/ximg_4.jpg.pagespeed.ic.i7INrRpDy-.webp"
+                    alt="">
+                <h6 style="text-align: center;margin-top: 20px;font-family:Georgia, 'Times New Roman', Times, serif">Taj
+                    Mahal, India</h6>
+
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 shadow-1 blue-hover" style="margin-top: 10px;margin-bottom: 20px">
+                <img style="width: 100%;height:100%;background-position: center;"
+                    src="https://preview.colorlib.com/theme/listed/images/ximg_5.jpg.pagespeed.ic.hji8QclRh9.webp"
+                    alt="">
+                <h6 style="text-align: center;margin-top: 20px;font-family:Georgia, 'Times New Roman', Times, serif">
+                    Eiffel Tower, France</h6>
+
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12 shadow-1 blue-hover" style="margin-top: 10px;margin-bottom: 20px">
+                <img style="width: 100%;height:100%;background-position: center;"
+                    src="https://preview.colorlib.com/theme/listed/images/ximg_6.jpg.pagespeed.ic.NgsvMd5xbN.webp"
+                    alt="">
+                <h6 style="text-align: center;margin-top: 20px;font-family:Georgia, 'Times New Roman', Times, serif">
+                    Opera House, Austrlia</h6>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div class="card-group row-cols-1 row-cols-md-3 g-4" style="align-self: center;margin-bottom: 30px;margin-top: 120px;">
+        <div class="card " style="margin: 0 auto; max-width: 70%;border-radius: 25px;border:3px solid rgb(118, 74, 241)">
+            <img style="height:300px" src="https://img.freepik.com/free-vector/room-reservation-online-customer-support-consultation-virtual-reception-office_335657-2488.jpg?w=2000"
+                class="card-img-top" alt="..." height="380px" width="280px">
+            <div class="card-body">
+                <h5 style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-size: 30px;font-weight: 500;"
+                    class="card-title">Hotel Details</h5>
+                <p style="color: white" class="card-text">Browse hotels by categories like facilities, reviews,
+                    policies and other details.</p>
+                <p class="card-text" style="color: aliceblue;">Compare hotels based on it and book a hotel
+                    accordingly.</p>
+            </div>
+            <div class="card-footer" style="margin: 10px auto">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle bt1" data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                        style="background-color: white;border: none;height: 50px;width: 100%;border-radius: 25px;padding-left: 20px;padding-right: 20px;">
+                        <h5 style="color: rgb(118, 74, 241);margin-top: 6px;">Browse</h5>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="facility.html">Facilies</a></li>
+                        <li><a class="dropdown-item" href="reviews.html">Reviews</a></li>
+                        <li><a class="dropdown-item" href="policy.html">Policies</a></li>
+                        <li><a class="dropdown-item" href="details.html">Other Details</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="card" style="margin: 0 auto; width: 70%;border-radius: 25px;border:0px solid rgb(118, 74, 241)">
+            <img style="height:300px" src="https://i.pinimg.com/originals/7c/c9/02/7cc90214801782237cf116c05394fb77.gif" class="card-img-top"
+                alt="..." width="80%" height="380px">
+            <div class="card-body">
+                <h5 class="card-title"
+                    style="color: aliceblue; font-family: Georgia, 'Times New Roman', Times, serif;font-size: 30px;font-weight: 500;">
+                    Find On Map</h5>
+                <p class="card-text" style="color: aliceblue;">Difficulty in finding hotel's location ?</p>
+                <p class="card-text" style="color: aliceblue;">Now it's easy to find your hotel on map. Get directed
+                    to your hotel</p>
+            </div>
+            <div class="card-footer" style="margin: 10px auto">
+
+                <button type="button" class="btn btn-danger bt1"
+                    style="background-color: white;border: none;height: 50px;width: 100%;border-radius: 25px;padding-left: 20px;padding-right: 20px;"><a
+                        style="text-decoration: none;color: rgb(118, 74, 241);font-weight: bold;" href="map.html">Direct
+                        To
+                        Map</a></button>
+
+            </div>
+        </div>
+        <div class="card" style="margin: 0 auto; width: 70%;border-radius: 25px;border:3px solid rgb(118, 74, 241)">
+            <img style="height:300px" src="https://rbpfinivis.com/images/BBPS1.png" class="card-img-top" alt="..." width="80%" height="380px"
+                style="background: rgb(153, 0, 240);">
+            <div class="card-body" style="width: 100%;">
+                <h5 class="card-title"
+                    style="color: white; font-family: Georgia, 'Times New Roman', Times, serif;font-size: 30px;font-weight: 500;">
+                    Payment Features</h5>
+                <p class="card-text" style="color: white;">Here are payment features of your hotel bookings.</p>
+                <p style="color: white;">Get acknowledged with these features</p>
+            </div>
+            <div class="card-footer" style="margin: 10px auto">
+                <button type="button" class="btn  bt1"
+                    style="background-color: white;border: none;height: 50px;width: 100%;border-radius: 25px;padding-left: 20px;padding-right: 20px;"><a
+                        style="text-decoration: none;color: rgb(118, 74, 241);font-weight: bold;"
+                        href="payment.html">Show Details</a></button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-area section-padding-80-0"
+        style="margin-top:100px;margin-bottom: 1%;background-color: #0e2737;">
+        <div class="main-footer-area">
+            <div class="container " style="padding-top: 3%;">
+                <div class="row align-items-baseline justify-content-space-between" style="padding: 0%;">
+
+                    <div class="col-8 col-sm-6 col-lg-3" style="margin-top: 10px;margin-bottom: 20px;">
+                        <h5 style="font-weight: 600;color: white;">Find Us</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/24/ffffff/external-house-web-smashingstocks-glyph-smashing-stocks.png" />
+                                New York, NY 10012,US</li>
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/material/24/ffffff/new-post--v1.png" /> yatra@gmail.com
+                            </li>
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/material-sharp/24/ffffff/phone.png" /> + 01 234 567 88
+                            </li>
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/24/ffffff/external-printer-back-to-school-kmg-design-glyph-kmg-design.png" />
+                                + 01 234 567 89</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-sm-4 col-lg-2" style="margin-top: 10px;margin-bottom: 20px;">
+                        <h5 style="font-weight: 600;color: white;">Sitemap</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a style="color: antiquewhite;" href="about.html">About YATRA</a></li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="contact.html">Contact Us</a></li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="privacy.html">Privacy Policy</a></li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="t&c.html">Terms & Conditions</a></li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="user_agreement.html">User
+                                    Agreement</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-8 col-sm-4 col-lg-4" style="margin-top: 10px;margin-bottom: 20px;">
+                        <div class="footer-widget" style="padding-right: 50px">
+                            <div class="section-heading">
+                                <h5 style="color: white;font-weight: 600;word-spacing: 10px;">Subscribe Our Newsletter
+                                </h5>
+                                <span class="animate-border border-black"></span>
+                                <span style="color: antiquewhite;word-spacing: 50%;padding-right: 22%;">Get latest
+                                    updates by
+                                    signing up for free</span>
+                            </div>
+
+                            <form action="#">
+                                <div class="form-row">
+                                    <div class="col dk-footer-form">
+                                        <input
+                                            style="height: 46px;border-radius:30px;background-color: #fff;padding: 3px;"
+                                            type="email" class="form-control" placeholder="   Email Address">
+                                        <button
+                                            style="width: 45px !important;height:45px !important;border-radius:50%;position:absolute;background-color:#1cc3b2;border: none;color: whitesmoke;margin-bottom: -190px !important;margin-left: -5px;"
+                                            type="submit">
+                                            <i style="margin-left:-2px" class="fa fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-8 col-sm-4 col-lg-3" style="margin-top: 10px;margin-bottom: 20px;">
+                        <h5 style="font-weight: 600;color: white;word-spacing: 10px;">Connect With Us</h5>
+                        <div class="container" style="padding-left: 0%;min-width: 80%;">
+                            <div class="row" style="padding: 0%;min-width: 50%;">
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+                                </div>
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+                                </div>
+                                <div class="col-4"><img src="https://img.icons8.com/fluency/48/000000/twitter.png" />
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0%;margin-top: 20px;">
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/color/48/000000/google-plus--v1.png" />
+                                </div>
+                                <div class="col-4"><img src="https://img.icons8.com/fluency/48/000000/linkedin.png" />
+                                </div>
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/external-prettycons-flat-prettycons/47/000000/external-youtube-multimedia-prettycons-flat-prettycons.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color: wheat;background-color: #031520;font-weight: 600;">
+            © 2022
+            Copyright:
+            <a style="text-decoration: none;color: rgb(230, 151, 77);" href="home.html"> YATRA </a>| All rights reserved
+        </div>
+    </footer>
+
+</body>
+
+</html>

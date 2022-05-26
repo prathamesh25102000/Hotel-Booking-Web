@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d82a03a734.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <style>
+        *,
+        *::before,
+        *::after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background-color: ivory;
+            color: blue
+        }
+
+        .row {
+            padding: 50px;
+        }
+
+        .bt:hover {
+            background-color: greenyellow !important
+        }
+
+        .bt1:hover {
+            background-color: rgb(255, 230, 171) !important;
+            color: white !important;
+        }
+
+        .bt1:hover a {
+            color: crimson !important;
+
+        }
+
+        .e1 {
+            color: white;
+            font-weight: bold;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: cornsilk;
+        }
+
+        .bc2:hover {
+            background-color: crimson !important;
+            color: white !important;
+        }
+
+        .fa-paper-plane:hover {
+
+            color: teal
+        }
+
+        .footer-left-widget {
+            padding-left: 80px;
+        }
+
+        .footer-widget .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .footer-widget:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .dk-footer-form {
+            position: relative;
+        }
+
+        .dk-footer-form input[type=email] {
+            /* padding: 14px 28px; */
+            border-radius: 23px;
+            background: #2E2E2E;
+            border: 1px solid #2E2E2E;
+        }
+
+        .dk-footer-form input::-webkit-input-placeholder,
+        .dk-footer-form input::-moz-placeholder,
+        .dk-footer-form input:-ms-input-placeholder,
+        .dk-footer-form input::-ms-input-placeholder,
+        .dk-footer-form input::-webkit-input-placeholder {
+            color: #878787;
+            font-size: 14px;
+        }
+
+        .dk-footer-form input::-webkit-input-placeholder,
+        .dk-footer-form input::-moz-placeholder,
+        .dk-footer-form input:-ms-input-placeholder,
+        .dk-footer-form input::-ms-input-placeholder,
+        .dk-footer-form input::placeholder {
+            color: #878787;
+            font-size: 14px;
+        }
+
+        .dk-footer-form button[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            border: 1px solid #007bff;
+            background: #007bff;
+            color: #fff;
+
+        }
+
+        .dk-footer-form button:hover {
+            cursor: pointer;
+            background-color: yellowgreen !important;
+        }
+
+        .shadow-effect {
+            background: #fff;
+            padding: 20px;
+            border-radius: 4px;
+            text-align: center;
+            border: 1px solid #ECECEC;
+            box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+        }
+
+        #customers-testimonials .shadow-effect p {
+            font-family: inherit;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 1.5;
+            margin: 0 0 17px 0;
+
+
+        }
+
+        .testimonial-name {
+            margin: -17px auto 0;
+            display: table;
+            width: auto;
+            background: #3190E7;
+            padding: 9px 35px;
+            border-radius: 12px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+        }
+
+        #customers-testimonials .item {
+            max-width: 400px;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 80px;
+            opacity: 0.2;
+            -webkit-transform: scale3d(0.8, 0.8, 1);
+            transform: scale3d(0.8, 0.8, 1);
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        #customers-testimonials .owl-item.active.center .item {
+            opacity: 1;
+            -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+        }
+
+        .owl-carousel .owl-item img {
+            transform-style: preserve-3d;
+            width: 200px !important;
+            height: 200px !important;
+            margin: 0 auto 17px;
+            border-radius: 50%;
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span,
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+            background: #3190E7;
+            transform: translate3d(0px, -50%, 0px) scale(0.7);
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot {
+            display: inline-block;
+        }
+
+        #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+            background: #3190E7;
+            display: inline-block;
+            height: 20px;
+            margin: 0 2px 5px;
+            transform: translate3d(0px, -50%, 0px) scale(0.3);
+            transform-origin: 50% 50% 0;
+            transition: all 250ms ease-out 0s;
+            width: 20px;
+            border-radius: 10px;
+        }
+        .navbar-brand:hover{
+            color: rgb(169, 16, 121) !important;
+        }
+    </style>
+    <title>Review Scores</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light container-fluid  shadow"
+        style="background-color:rgb(255, 255, 255); width: 100%; margin: 0px auto 0px auto;z-index: 1;padding-bottom: 0px;padding-top: 0px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zxoA6AfpXJFRikqcrR_ebzFF3tF-6vrkxQ&usqp=CAU"
+                    width="85%" height="60px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="margin-left: 10%" class="collapse navbar-collapse" id="navbarNav">
+                <ul style="font-weight: 500;" class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="home.html" style="font-weight: 500;">Home</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" aria-current="page" href="searchhotels.html"
+                            style="margin-left: 10px;">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="about.html" style="margin-left: 10px;">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="photo.html" style="margin-left: 10px;">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="contact.html" style="margin-left: 10px;">Contacts</a>
+                    </li>
+
+                </ul>
+                <span id="navbar-text" style="margin-left: 35%">
+                    <a style=" font-weight: 600;text-align: center;" class="btn btn-primary" href="book.html"
+                        role="button">Book Now</a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5 py-5" style="padding-top: 0px;background-color: aliceblue;">
+        <div class="row mb-5"
+            style="padding-top: 0px !important;padding-bottom: 0px !important;margin-bottom: 0px !important;">
+            <div class="col-12">
+                <h1
+                    style="color: teal;margin-left: 5px; font-family: Georgia, 'Times New Roman', Times, serif;font-size: 300%;word-spacing: 10px !important;">
+                    Have a look over reviews of a hotel</h1>
+                <br></br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <img style="height: 100%;width:100%"
+                    src="https://media.istockphoto.com/vectors/reviews-rating-online-bubbles-on-mobile-phone-or-customer-feedback-vector-id1220741223?k=20&m=1220741223&s=612x612&w=0&h=XbT5N1_WrSGHoW_2M_NGuYBCBgwYzou3hvYGoQVhA0c="
+                    alt="">
+            </div>
+            <div class="col-md-6" style="background-color: rgb(169, 223, 61)">
+                <form action="/reviews.html" method="post" style="margin-top: 13%;padding-bottom: 50px;">
+                    <label style="margin-left: 16%; font-weight: bold;color: white;font-size: 30px;" for="hid">Hotel id
+                    </label>
+                    <input style="height:30px;margin-left: 15%;border-radius: 20px;border: white" type="text" name="hid"
+                        placeholder="        Hotel id" required>
+                    <br></br>
+                    <br></br>
+                    <label style="margin-left: 16%; font-weight: bold;color: white;font-size: 30px;" for="loc">locale
+                    </label>
+                    <input style="height:30px;margin-left: 15%;border-radius: 20px;border: white" list="loc" name="loc"
+                        required>
+                    <datalist name="loc" id="loc">
+                        <option value="en-gb">en-gb</option>
+                        <option value="en-us">en-us</option>
+                        <option value="de">de</option>
+                        <option value="nl">nl</option>
+                        <option value="fr">fr</option>
+                        <option value="es">es</option>
+                        <option value="sv">sv</option>
+                        <option value="da">da</option>
+                        <option value="cs">cs</option>
+                        <option value="es-mx">es-mx</option>
+                    </datalist>
+                    <br></br>
+                    <br></br>
+                    <label style="margin-left: 16%; font-weight: bold;color: white;font-size: 30px;" for="sb">sort
+                        by</label>
+                    <input style="height:30px;margin-left: 15%;border-radius: 20px;border: white" list="sb" name="sb"
+                        required>
+                    <datalist name="sb" id="sb">
+                        <option value="SORT_MOST_RELEVANT">SORT_MOST_RELEVANT</option>
+                        <option value="SORT_RECENT_DESC">SORT_RECENT_DESC</option>
+                        <option value="SORT_RECENT_ASC">SORT_RECENT_ASC</option>
+                        <option value="SORT_SCORE_DESC">SORT_SCORE_DESC</option>
+                        <option value="SORT_SCORE_ASC">SORT_SCORE_ASC</option>
+                    </datalist>
+                    <br></br>
+                    <br></br>
+                    <button class="btn btn-warning bc2" type="submit"
+                        style="border-radius: 25px !important;border: white; background-color: white; margin-left: 16%;color: yellowgreen;font-weight: 700;padding-left:20px;padding-right: 20px;">Show
+                        Me Reviews</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section class="testimonials" style="background-color: crimson">
+        <h1
+            style="text-align: center;color:white;padding-top:50px;font-family:Georgia, 'Times New Roman', Times, serif">
+            What Our Clients Say</h1>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div id="customers-testimonials" class="owl-carousel">
+
+
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle"
+                                    src="data:image/jpeg;base64,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"
+                                    alt="">
+                                <p style="font-size: 20px;font-weight:500"><i class="fa-solid fa-quote-left"></i> 1.
+                                    Linen and mattresses were fresh n clean, room well maintained and clean. 2. Parking
+                                    is along the main road , but absolutely safe and secure.
+                                    3. Staff is responsible and prompt in action. 4. I recommend for families and groups
+                                    stay <i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                            <div class="testimonial-name">ANNA AQUILANI</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle"
+                                    src="data:image/jpeg;base64,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"
+                                    alt="">
+                                <p><i class="fa-solid fa-quote-left"></i> Comfortable beds, clean linen, quiet room,
+                                    clean bathroom. I wasn't very happy with the carpeting - perhaps that should be
+                                    changed throughout the hotel. <i class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                            <div class="testimonial-name">EMILIANO ITURBE</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle" src="https://nicesnippets.com/demo/profile-1.jpg" alt="">
+                                <p><i class="fa-solid fa-quote-left"></i> The owners were SO friendly! The food was also
+                                    really good. there was also a fridge in the floor where the rooms were to put water
+                                    bottles to cool. the rooms were clean and very comfortable bed and pillows. <i
+                                        class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                            <div class="testimonial-name">IAN ATKINSON</div>
+                        </div>
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle"
+                                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNqfhsu0IUlVuGiJrJ_YIAquPSBqyj5RhwuyypEpXtFIvQqUTBLzAPcikf6TU2-fPHqTI&usqp=CAU"
+                                    alt="">
+                                <p><i class="fa-solid fa-quote-left"></i> The owners were SO friendly! The food was also
+                                    really good. there was also a fridge in the floor where the rooms were to put water
+                                    bottles to cool. the rooms were clean and very comfortable bed and pillows. <i
+                                        class="fa-solid fa-quote-right"></i></p>
+                            </div>
+                            <div class="testimonial-name">LARA OWEN</div>
+                        </div>
+
+                        <div class="item">
+                            <div class="shadow-effect">
+                                <img class="img-circle"
+                                    src="https://www.beecrownlogistics.co.uk/wp-content/uploads/2020/09/testimonial1.jpg"
+                                    alt="">
+                                <p><i class="fa-solid fa-quote-left"></i> Friendly and supportive host. Clean. Good
+                                    lightnig placement - every part of apartement could be lighted. Quiet neighborhood
+                                    and birds singing outside. Great furniture- <i class="fa-solid fa-quote-right"></i>
+                                </p>
+                            </div>
+                            <div class="testimonial-name">NICOLE TEDDY</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-area section-padding-80-0" style="margin-top:150px;background-color: #0e2737;">
+        <div class="main-footer-area">
+            <div class="container " style="padding-top: 3%;">
+                <div class="row align-items-baseline justify-content-space-between" style="padding: 0%;">
+
+                    <div class="col-8 col-sm-6 col-lg-3" style="margin-top: 10px;margin-bottom: 20px;">
+                        <h5 style="font-weight: 600;color: white;">Find Us</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/24/ffffff/external-house-web-smashingstocks-glyph-smashing-stocks.png" />
+                                New York, NY 10012,US</li>
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/material/24/ffffff/new-post--v1.png" />
+                                yatra@gmail.com
+                            </li>
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/material-sharp/24/ffffff/phone.png" /> + 01 234 567
+                                88
+                            </li>
+                            <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                    src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/24/ffffff/external-printer-back-to-school-kmg-design-glyph-kmg-design.png" />
+                                + 01 234 567 89</li>
+                        </ul>
+                    </div>
+                    <div class="col-4 col-sm-4 col-lg-2" style="margin-top: 10px;margin-bottom: 20px;">
+                        <h5 style="font-weight: 600;color: white;">Sitemap</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a style="color: antiquewhite;" href="about.html">About YATRA</a></li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="contact.html">Contact Us</a></li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="privacy.html">Privacy Policy</a>
+                            </li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="t&c.html">Terms & Conditions</a>
+                            </li>
+                            <li class="mb-2"><a style="color: antiquewhite;" href="user_agreement.html">User
+                                    Agreement</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="col-8 col-sm-4 col-lg-4" style="margin-top: 10px;margin-bottom: 20px;">
+                        <div class="footer-widget" style="padding-right: 50px">
+                            <div class="section-heading">
+                                <h5 style="color: white;font-weight: 600;word-spacing: 10px;">Subscribe Our
+                                    Newsletter
+                                </h5>
+                                <span class="animate-border border-black"></span>
+                                <span style="color: antiquewhite;word-spacing: 50%;padding-right: 22%;">Get latest
+                                    updates by
+                                    signing up for free</span>
+                            </div>
+
+                            <form action="#">
+                                <div class="form-row">
+                                    <div class="col dk-footer-form">
+                                        <input
+                                            style="height: 46px;border-radius:30px;background-color: #fff;padding: 3px;"
+                                            type="email" class="form-control" placeholder="   Email Address">
+                                        <button
+                                            style="width: 45px !important;height:45px !important;border-radius:50%;position:absolute;background-color:#1cc3b2;border: none;color: whitesmoke;margin-bottom: -190px !important;margin-left: -5px;"
+                                            type="submit">
+                                            <i style="margin-left:-2px" class="fa fa-paper-plane"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-8 col-sm-4 col-lg-3" style="margin-top: 10px;margin-bottom: 20px;">
+                        <h5 style="font-weight: 600;color: white;word-spacing: 10px;">Connect With Us</h5>
+                        <div class="container" style="padding-left: 0%;min-width: 80%;margin-top: 15px;">
+                            <div class="row" style="padding: 0%;min-width: 50%;">
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+                                </div>
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+                                </div>
+                                <div class="col-4"><img src="https://img.icons8.com/fluency/48/000000/twitter.png" />
+                                </div>
+                            </div>
+                            <div class="row" style="padding: 0%;margin-top: 20px;">
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/color/48/000000/google-plus--v1.png" />
+                                </div>
+                                <div class="col-4"><img src="https://img.icons8.com/fluency/48/000000/linkedin.png" />
+                                </div>
+                                <div class="col-4"><img
+                                        src="https://img.icons8.com/external-prettycons-flat-prettycons/47/000000/external-youtube-multimedia-prettycons-flat-prettycons.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3" style="color: wheat;background-color: #031520;font-weight: 600;">
+            © 2022
+            Copyright:
+            <a style="text-decoration: none;color: rgb(230, 151, 77);" href="home.html"> YATRA </a>| All rights
+            reserved
+        </div>
+    </footer>
+</body>
+
+
+<script src="jquery-3.5.1.min.js"></script>
+<script src="index.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    jQuery(document).ready(function ($) {
+        "use strict";
+        //  TESTIMONIALS CAROUSEL HOOK
+        $('#customers-testimonials').owlCarousel({
+            loop: true,
+            center: true,
+            items: 3,
+            margin: 0,
+            autoplay: true,
+            dots: true,
+            autoplayTimeout: 8500,
+            smartSpeed: 450,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 2
+                },
+                1170: {
+                    items: 3
+                }
+            }
+        });
+    });
+</script>
+
+</html>

@@ -1,0 +1,385 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    /* overflow-x: hidden; */
+    height: 100%;
+}
+ p{
+     font-weight: bold;
+     
+ }   
+.hd{
+    min-height: 950px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 400px/130px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background-image: url("https://lh3.googleusercontent.com/zOh4gcwX7SBwJ-EkUQm-kCrLCpvs8kxt9-ZOs3iLAS5wBGGyVlN175Fa4QTD9IDf4-mv13OGMXZyNBtY2PWz2AFP=s1000");
+
+}
+.btn:hover{
+    background-color: ivory;
+    color: blue
+}
+.row{
+    padding: 50px;
+}
+
+.bt:hover{
+    background-color: greenyellow !important
+}
+
+.bt1:hover{
+    background-color: rgb(255, 230, 171) !important;
+    color: white !important;
+}
+
+.bt1:hover a{
+    color: crimson !important;
+  
+}
+.e1{
+	color: white;
+	font-weight: bold;
+	-webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: cornsilk;
+}
+.card{
+    width: 80%;
+    background-color:rgb(118, 74, 241);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgb(211, 199, 199);
+    
+    transform: scale(0.85);
+    transition: box-shadow 0.2s, transform 0.6s;
+}
+.h-100{
+    background-color: rgb(169, 221, 66);
+}
+.card:hover {
+        transform: scale(1);
+        box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+.py-4 {
+   padding-top: 0%;
+   padding-bottom: 0%;
+}
+
+.sigle-contact-info{
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 15px;
+    color: rgb(28, 195, 178)
+}
+
+.b1{
+    width:100%;
+    height:40%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(0deg,rgba(0.3,0.3,0.3,0.3),rgba(0.5,0.5,0.5,0.3)),url("https://wallup.net/wp-content/uploads/2014/08/interior-design-living-room.jpg");
+    display: table;
+    text-align: center; 
+
+}
+
+.b2{
+    width:100%;
+    height:30%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(0deg,rgba(0.3,0.3,0.3,0.5),rgba(0.5,0.5,0.5,0.5)),url("https://media.shermanstravel.com/Advice/952x460_intercontinentaltimessq.jpg");
+    display: table;
+    text-align: center;     
+}
+
+.bc:hover{
+    background-color: red !important;
+    color: teal;
+}
+
+.b3{
+    width:100%;
+    height:110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(0deg,rgba(0.3,0.3,0.3,0.5),rgba(0.5,0.5,0.5,0.5)),url("https://s7d2.scene7.com/is/image/ritzcarlton/RCSHAPU_00010_conversion-1?$XlargeViewport100pct$");
+    display: table;
+    text-align: center;     
+  
+}
+
+.b4{
+    width:100%;
+    height:110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(0deg,rgba(0.3,0.3,0.3,0.5),rgba(0.5,0.5,0.5,0.5)),url("https://www.nolato.com/-/media/Images/Career/Switzerland/Switzerland.png?h=810&w=1650&hash=BF0D45F7DF677E5A785236B388E02898");
+    display: table;
+    text-align: center;     
+  
+}
+.bc1{
+    padding-left: 35px !important;
+    padding-right: 35px !important;
+}
+.bc1:hover{
+    background-color: orangered !important;
+    color: aqua;
+}
+
+.fa-paper-plane:hover{
+   
+   color:teal
+}
+
+.bc2:hover{
+    background-color: crimson !important;
+    color: white !important;
+}
+
+.bc3:hover{
+    background-color: yellowgreen !important;
+    color: white !important;
+}
+
+
+.bc4:hover{
+    background-color: crimson !important;
+    color: white !important;
+}
+
+.bc5:hover{
+    background-color: gold !important;
+    color: white !important;
+}
+
+.b5{
+    width:100%;
+    height:110%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(0deg,rgba(0.3,0.3,0.3,0.5),rgba(0.5,0.5,0.5,0.5)),url("https://thumbs.dreamstime.com/z/street-map-21043803.jpg");
+    display: table;
+    text-align: center;   
+ 
+  
+}
+
+
+
+
+
+
+
+.shadow-effect {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid #ECECEC;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.1), 0 15px 12px rgba(0, 0, 0, 0.02);
+  }
+  #customers-testimonials .shadow-effect p {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 0 0 17px 0;
+
+    
+  }
+  .testimonial-name {
+    margin: -17px auto 0;
+    display: table;
+    width: auto;
+    background: #3190E7;
+    padding: 9px 35px;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 9px 18px rgba(0, 0, 0, 0.12), 0 5px 7px rgba(0, 0, 0, 0.05);
+  }
+  #customers-testimonials .item {
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 80px;
+    opacity: 0.2;
+    -webkit-transform: scale3d(0.8, 0.8, 1);
+    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  #customers-testimonials .owl-item.active.center .item {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  .owl-carousel .owl-item img {
+    transform-style: preserve-3d;
+    width: 200px !important;
+    height: 200px !important;
+    margin: 0 auto 17px;
+    border-radius: 50%;
+  }
+  #customers-testimonials.owl-carousel .owl-dots .owl-dot.active span, #customers-testimonials.owl-carousel .owl-dots .owl-dot:hover span {
+    background: #3190E7;
+    transform: translate3d(0px, -50%, 0px) scale(0.7);
+  }
+  #customers-testimonials.owl-carousel .owl-dots {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+  }
+  #customers-testimonials.owl-carousel .owl-dots .owl-dot {
+    display: inline-block;
+  }
+  #customers-testimonials.owl-carousel .owl-dots .owl-dot span {
+    background: #3190E7;
+    display: inline-block;
+    height: 20px;
+    margin: 0 2px 5px;
+    transform: translate3d(0px, -50%, 0px) scale(0.3);
+    transform-origin: 50% 50% 0;
+    transition: all 250ms ease-out 0s;
+    width: 20px;
+    border-radius: 10px;
+  }
+  
+
+
+
+
+   .feature-destination, .slider-wrap {
+    position: relative;
+    z-index: 10;
+    margin-top: -50px;
+    margin-bottom: 50px;
+} 
+/*
+.element-animate {
+    opacity: 0;
+    visibility: hidden;
+}
+*/
+.fadeInUp {
+    animation-name: fadeInUp;
+}
+.element-animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.feature-destination .img-bg, .slider-wrap .img-bg {
+    margin-bottom: 30px;
+    display: block;
+    height: 300px;
+    position: relative;
+    top: 0;
+    -webkit-transition: .2s all ease;
+    -o-transition: .2s all ease;
+    transition: .2s all ease;
+}
+.img-bg{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px !important;
+
+    background-image: url("https://preview.colorlib.com/theme/listed/images/ximg_2.jpg.pagespeed.ic.-akM_1eoCH.webp");
+}
+
+a {
+    
+    text-decoration: none !important;
+    color: #007bff;
+    background-color: transparent;   
+}
+/*
+ .element-animate {
+    visibility: hidden;
+} */
+
+.feature-destination .img-bg:before, .slider-wrap .img-bg:before {
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: .1;
+    position: absolute;
+ 
+    transition: .3s all ease;
+}
+
+.feature-destination .img-bg .text, .slider-wrap .img-bg .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 80%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.feature-destination .img-bg .text .icon, .slider-wrap .img-bg .text .icon {
+    color: #fff;
+    font-size: 30px;
+    position: relative;
+   
+    transition: .3s all ease;
+    top: 0;
+}
+
+.feature-destination .img-bg .text, .slider-wrap .img-bg .text {
+   
+    text-align: center;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+
+.feature-destination .img-bg .text h2 {
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    top: 0px;
+    position: relative;
+    font-family: "Playfair Display", times, serif;
+    line-height: 1.2;
+}
+
+.feature-destination .img-bg .text p {
+    color: #fff;
+    opacity: 0;
+    top: 10px;
+     /* visibility: hidden; */
+    font-size: 13px;
+    position: relative;
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+}
+ 
+
+

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d82a03a734.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .btn:hover {
+            background-color: ivory;
+            color: blue
+        }
+
+        .bt:hover {
+            background-color: greenyellow !important
+        }
+
+
+        .e1 {
+            color: white;
+            font-weight: bold;
+            -webkit-text-stroke-width: 0.3px;
+            -webkit-text-stroke-color: cornsilk;
+        }
+
+
+        .fa-paper-plane:hover {
+
+            color: teal
+        }
+
+        .footer-left-widget {
+            padding-left: 80px;
+        }
+
+        .footer-widget .section-heading {
+            margin-bottom: 25px;
+        }
+
+        .footer-widget:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .dk-footer-form {
+            position: relative;
+        }
+
+        .dk-footer-form input[type=email] {
+            /* padding: 14px 28px; */
+            border-radius: 23px;
+            background: #2E2E2E;
+            border: 1px solid #2E2E2E;
+        }
+
+        .dk-footer-form input::-webkit-input-placeholder,
+        .dk-footer-form input::-moz-placeholder,
+        .dk-footer-form input:-ms-input-placeholder,
+        .dk-footer-form input::-ms-input-placeholder,
+        .dk-footer-form input::-webkit-input-placeholder {
+            color: #878787;
+            font-size: 14px;
+        }
+
+        .dk-footer-form input::-webkit-input-placeholder,
+        .dk-footer-form input::-moz-placeholder,
+        .dk-footer-form input:-ms-input-placeholder,
+        .dk-footer-form input::-ms-input-placeholder,
+        .dk-footer-form input::placeholder {
+            color: #878787;
+            font-size: 14px;
+        }
+
+        .dk-footer-form button[type=submit] {
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            border: 1px solid #007bff;
+            background: #007bff;
+            color: #fff;
+
+        }
+
+        .dk-footer-form button:hover {
+            cursor: pointer;
+            background-color: yellowgreen !important;
+        }
+
+        .b3 {
+            width: 100%;
+            height: 110%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background: linear-gradient(0deg, rgba(0.3, 0.3, 0.3, 0.5), rgba(0.5, 0.5, 0.5, 0.5)), url("https://s7d2.scene7.com/is/image/ritzcarlton/RCSHAPU_00010_conversion-1?$XlargeViewport100pct$");
+            display: table;
+            text-align: center;
+             background-position: center;
+        }
+        .pb:hover{
+            background-color:gold !important;
+            color: rgb(169, 16, 121) !important;
+        }
+        .navbar-brand:hover{
+            color: rgb(169, 16, 121) !important;
+        }
+    </style>
+    <title>Gallery</title>
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid sticky-top shadow"
+            style="background-color:rgb(255, 255, 255); width: 100%; margin: 0px auto 0px auto;z-index: 1;padding-bottom: 0px;padding-top: 0px;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-zxoA6AfpXJFRikqcrR_ebzFF3tF-6vrkxQ&usqp=CAU"
+                        width="85%" height="60px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="margin-left: 10%" class="collapse navbar-collapse" id="navbarNav">
+                    <ul style="font-weight: 500;" class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="home.html" style="font-weight: 500;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" aria-current="page" href="searchhotels.html"
+                                style="margin-left: 10px;">Hotels</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="about.html" style="margin-left: 10px;">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="photo.html" style="margin-left: 10px;">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-brand" href="contact.html" style="margin-left: 10px;">Contacts</a>
+                        </li>
+
+                    </ul>
+                    <span id="navbar-text" style="margin-left: 35%">
+                        <a style=" font-weight: 600;text-align: center;" class="btn btn-primary" href="book.html"
+                            role="button">Book Now</a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+        <div class="b3">
+            <div class="container" style="margin:auto auto;margin-top: 5%;padding-bottom: 50px;">
+                <h1
+                    style="color: rgb(241, 149, 11);font-weight: bold;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 300%">
+                    Enjoy a
+                    luxury experience</h1>
+                <p style="color: yellowgreen;font-size:40px">Want a preview of hotel before booking?</p>
+                <br></br>
+                <form action="/photo.html" method="post" style="text-align: center">
+                    <label
+                        style="margin-left: 15px; font-weight: 600;color: white;font-size: 35px;margin-bottom: -50px !important;padding-bottom: 0px !important;"
+                        for="hid">Hotel id </label>
+                    <input style="height:40px;margin-left: 30px;border-radius: 20px;border: white" type="text"
+                        name="hid" placeholder="    Hotel id" required>
+                    <br></br>
+                    <br></br>
+                    <label style="margin-left: 15px; font-weight: 600;color: white;font-size: 35px" for="loc">locale
+                    </label>
+                    <input style="height:40px;margin-left: 30px;border-radius: 20px;border: white;" list="loc"
+                        name="loc" required>
+                    <datalist name="loc" id="loc">
+                        <option value="en-gb">en-gb</option>
+                        <option value="en-us">en-us</option>
+                        <option value="de">de</option>
+                        <option value="nl">nl</option>
+                        <option value="fr">fr</option>
+                        <option value="es">es</option>
+                        <option value="sv">sv</option>
+                        <option value="da">da</option>
+                        <option value="cs">cs</option>
+                        <option value="es-mx">es-mx</option>
+                    </datalist>
+                    <br></br>
+                    <br></br>
+
+                    <button class="btn btn-warning pb" type="submit"
+                        style="background-color: rgb(169, 16, 121);padding-left: 35px;padding-right: 35px;border-radius: 19px;border: rgb(169, 16, 121); ;color: azure;font-weight: 600;">Show</button>
+                </form>
+            </div>
+
+        </div>
+
+
+        <footer class="footer-area section-padding-80-0" style="margin-top:150px;background-color: #0e2737;">
+            <div class="main-footer-area">
+                <div class="container " style="padding-top: 3%;">
+                    <div class="row align-items-baseline justify-content-space-between" style="padding: 0%;">
+
+                        <div class="col-8 col-sm-6 col-lg-3" style="margin-top: 10px;margin-bottom: 20px;">
+                            <h5 style="font-weight: 600;color: white;">Find Us</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                        src="https://img.icons8.com/external-smashingstocks-glyph-smashing-stocks/24/ffffff/external-house-web-smashingstocks-glyph-smashing-stocks.png" />
+                                    New York, NY 10012,US</li>
+                                <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                        src="https://img.icons8.com/material/24/ffffff/new-post--v1.png" />
+                                    yatra@gmail.com
+                                </li>
+                                <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                        src="https://img.icons8.com/material-sharp/24/ffffff/phone.png" /> + 01 234 567
+                                    88
+                                </li>
+                                <li class="mb-2" style="font-weight: 600;color: white;"><img
+                                        src="https://img.icons8.com/external-kmg-design-glyph-kmg-design/24/ffffff/external-printer-back-to-school-kmg-design-glyph-kmg-design.png" />
+                                    + 01 234 567 89</li>
+                            </ul>
+                        </div>
+                        <div class="col-4 col-sm-4 col-lg-2" style="margin-top: 10px;margin-bottom: 20px;">
+                            <h5 style="font-weight: 600;color: white;">Sitemap</h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a style="color: antiquewhite;" href="about.html">About YATRA</a></li>
+                                <li class="mb-2"><a style="color: antiquewhite;" href="contact.html">Contact Us</a></li>
+                                <li class="mb-2"><a style="color: antiquewhite;" href="privacy.html">Privacy Policy</a>
+                                </li>
+                                <li class="mb-2"><a style="color: antiquewhite;" href="t&c.html">Terms & Conditions</a>
+                                </li>
+                                <li class="mb-2"><a style="color: antiquewhite;" href="user_agreement.html">User
+                                        Agreement</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="col-8 col-sm-4 col-lg-4" style="margin-top: 10px;margin-bottom: 20px;">
+                            <div class="footer-widget" style="padding-right: 50px">
+                                <div class="section-heading">
+                                    <h5 style="color: white;font-weight: 600;word-spacing: 10px;">Subscribe Our
+                                        Newsletter
+                                    </h5>
+                                    <span class="animate-border border-black"></span>
+                                    <span style="color: antiquewhite;word-spacing: 50%;padding-right: 22%;">Get latest
+                                        updates by
+                                        signing up for free</span>
+                                </div>
+
+                                <form action="#">
+                                    <div class="form-row">
+                                        <div class="col dk-footer-form">
+                                            <input
+                                                style="height: 46px;border-radius:30px;background-color: #fff;padding: 3px;"
+                                                type="email" class="form-control" placeholder="   Email Address">
+                                            <button
+                                                style="width: 45px !important;height:45px !important;border-radius:50%;position:absolute;background-color:#1cc3b2;border: none;color: whitesmoke;margin-bottom: -190px !important;margin-left: -5px;"
+                                                type="submit">
+                                                <i style="margin-left:-2px" class="fa fa-paper-plane"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="col-8 col-sm-4 col-lg-3" style="margin-top: 10px;margin-bottom: 20px;">
+                            <h5 style="font-weight: 600;color: white;word-spacing: 10px;">Connect With Us</h5>
+                            <div class="container" style="padding-left: 0%;min-width: 80%;margin-top: 15px;">
+                                <div class="row" style="padding: 0%;min-width: 50%;">
+                                    <div class="col-4"><img
+                                            src="https://img.icons8.com/fluency/48/000000/facebook-new.png" />
+                                    </div>
+                                    <div class="col-4"><img
+                                            src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />
+                                    </div>
+                                    <div class="col-4"><img
+                                            src="https://img.icons8.com/fluency/48/000000/twitter.png" />
+                                    </div>
+                                </div>
+                                <div class="row" style="padding: 0%;margin-top: 20px;">
+                                    <div class="col-4"><img
+                                            src="https://img.icons8.com/color/48/000000/google-plus--v1.png" />
+                                    </div>
+                                    <div class="col-4"><img
+                                            src="https://img.icons8.com/fluency/48/000000/linkedin.png" />
+                                    </div>
+                                    <div class="col-4"><img
+                                            src="https://img.icons8.com/external-prettycons-flat-prettycons/47/000000/external-youtube-multimedia-prettycons-flat-prettycons.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright text-center py-3"
+                style="color: wheat;background-color: #031520;font-weight: 600;">
+                © 2022
+                Copyright:
+                <a style="text-decoration: none;color: rgb(230, 151, 77);" href="home.html"> YATRA </a>| All rights
+                reserved
+            </div>
+        </footer>
+
+    </div>
+</body>
+
+</html>
