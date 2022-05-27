@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "start": "node app.js",
-    "postinstall": "./node_modules/bower/bin/bower install && npm run build"
+    "heroku-postbuild": "npm install --prefix client && npm run build --prefix client"
 
   },
   "author": "Prathamesh",
